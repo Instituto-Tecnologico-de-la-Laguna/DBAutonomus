@@ -90,14 +90,14 @@ namespace DBAutonomus
                         while (reader.Read())
                         {
                             // Agregar una fila al DataGridView por cada registro en el resultado
-                            tablaAlumnos.Rows.Add(reader["NOMBRE"], reader["APATERNO"], reader["AMATERNO"], reader["CONTROL"], reader["ID"]);
+                            tablaAlumnos.Rows.Add(reader["NOMBRE"], reader["APATERNO"], reader["AMATERNO"], reader["CONTROL"]);
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar los datos de los alumnos: " + ex.Message);
+                //MessageBox.Show("Error al cargar los datos de los alumnos: " + ex.Message);
             }
             finally
             {

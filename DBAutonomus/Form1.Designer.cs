@@ -128,7 +128,7 @@
             tablaAlumnos.Columns.AddRange(new DataGridViewColumn[] { Nombre, apPaterno, apMaterno, noControl });
             tablaAlumnos.Location = new Point(244, 12);
             tablaAlumnos.Name = "tablaAlumnos";
-            tablaAlumnos.Size = new Size(444, 150);
+            tablaAlumnos.Size = new Size(445, 150);
             tablaAlumnos.TabIndex = 9;
             tablaAlumnos.CellContentClick += dataGridViewAlumnos_CellContentClick;
             // 
@@ -166,7 +166,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(709, 279);
+            ClientSize = new Size(818, 279);
             Controls.Add(butAgregar);
             Controls.Add(tablaAlumnos);
             Controls.Add(label4);
