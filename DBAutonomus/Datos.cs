@@ -11,10 +11,12 @@ namespace DBAutonomus
         OracleConnection con;
         string cadenaConexion = "User Id=ADMIN;Password=JOSEluis1981;Data Source=jldb_high";
         
+        // NOMRE, APATERNO, AMATERNO, CONTROL
+        // TABLA ALUMNOS
 
         public bool abrirConexion()
         {
-            OracleConfiguration.TnsAdmin = @"C:\Users\Jose Luis\Downloads\Wallet_JLDB";
+            OracleConfiguration.TnsAdmin = @"D:\Github\DBAutonomus\DBAutonomus\Wallet\";
             OracleConfiguration.WalletLocation=OracleConfiguration.TnsAdmin;
             try {
                 con = new OracleConnection(cadenaConexion);
@@ -25,6 +27,7 @@ namespace DBAutonomus
                 return false;
             }
         }
+
 
     }
 }
