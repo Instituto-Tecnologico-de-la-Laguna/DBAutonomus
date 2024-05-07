@@ -39,6 +39,7 @@
             label4 = new Label();
             tablaAlumnos = new DataGridView();
             butAgregar = new Button();
+            id = new DataGridViewTextBoxColumn();
             Nombre = new DataGridViewTextBoxColumn();
             apPaterno = new DataGridViewTextBoxColumn();
             apMaterno = new DataGridViewTextBoxColumn();
@@ -125,10 +126,10 @@
             // tablaAlumnos
             // 
             tablaAlumnos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tablaAlumnos.Columns.AddRange(new DataGridViewColumn[] { Nombre, apPaterno, apMaterno, noControl });
+            tablaAlumnos.Columns.AddRange(new DataGridViewColumn[] { id, Nombre, apPaterno, apMaterno, noControl });
             tablaAlumnos.Location = new Point(244, 12);
             tablaAlumnos.Name = "tablaAlumnos";
-            tablaAlumnos.Size = new Size(445, 150);
+            tablaAlumnos.Size = new Size(544, 150);
             tablaAlumnos.TabIndex = 9;
             tablaAlumnos.CellContentClick += dataGridViewAlumnos_CellContentClick;
             // 
@@ -141,6 +142,11 @@
             butAgregar.Text = "Agregar";
             butAgregar.UseVisualStyleBackColor = true;
             butAgregar.Click += butAgregar_Click;
+            // 
+            // id
+            // 
+            id.HeaderText = "ID";
+            id.Name = "id";
             // 
             // Nombre
             // 
@@ -200,6 +206,7 @@
         private Label label4;
         private DataGridView tablaAlumnos;
         private Button butAgregar;
+        private DataGridViewTextBoxColumn id;
         private DataGridViewTextBoxColumn Nombre;
         private DataGridViewTextBoxColumn apPaterno;
         private DataGridViewTextBoxColumn apMaterno;

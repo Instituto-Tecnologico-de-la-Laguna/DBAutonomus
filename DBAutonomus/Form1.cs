@@ -90,7 +90,7 @@ namespace DBAutonomus
                         while (reader.Read())
                         {
                             // Agregar una fila al DataGridView por cada registro en el resultado
-                            tablaAlumnos.Rows.Add(reader["NOMBRE"], reader["APATERNO"], reader["AMATERNO"], reader["CONTROL"]);
+                            tablaAlumnos.Rows.Add(reader["ID"], reader["NOMBRE"], reader["APATERNO"], reader["AMATERNO"], reader["CONTROL"]);
                         }
                     }
                 }
