@@ -11,12 +11,19 @@ namespace DBAutonomus
         {
            
             Datos obj= new Datos();
-            if (obj.abrirConexion() == true)
+            bool r = obj.cmd("Insert Into Alumnos(control,nombre,apaterno,amaterno) " + 
+                "Values('" + txtControl.Text + "','"+ txtNombre .Text + "','" +
+                txtPaterno.Text + "','" + txtMaterno .Text + "')");
+
+            if (r== true)
             {
-                MessageBox.Show("Exito");
+                MessageBox.Show("Informacion agregada","Sistema",
+                    MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             else
-                MessageBox.Show("Error");
+                MessageBox.Show("Error","Sistema",MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
         }
+        
     }
 }
